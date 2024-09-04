@@ -50,7 +50,7 @@ function Create-TimeDisplay($title, $y) {
     $valueLabel.Size = New-Object System.Drawing.Size(200, 30)
     $valueLabel.Text = "00:00"
     $valueLabel.Font = $valueFont
-    $valueLabel.ForeColor = [System.Drawing.Color]::Black
+    $valueLabel.ForeColor = [System.Drawing.Color]::DarkBlue
     $form.Controls.Add($valueLabel)
 
     return $valueLabel
@@ -69,7 +69,7 @@ function Create-Button($text, $x, $y, $width, $height) {
     $button.Font = $buttonFont
     $button.FlatStyle = [System.Windows.Forms.FlatStyle]::Flat
     $button.BackColor = [System.Drawing.Color]::LightGray
-    $button.ForeColor = [System.Drawing.Color]::Black
+    $button.ForeColor = [System.Drawing.Color]::DarkBlue
     $form.Controls.Add($button)
     return $button
 }
